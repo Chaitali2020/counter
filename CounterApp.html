@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>   
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }button{
+            padding: 5px 10px;
+            color: white;
+            background-color: black;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }input{
+            padding: 5px 10px;
+            color: black;
+            font-size: 13px;
+        }#res{
+            color: green;
+            font-size: 13px;
+            font-weight: bold;
+        }.inputsCalc,.counter{
+            margin: 50px 10px;
+        }
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="counter">
+            <h1>counter</h1>
+            <h2 id="value">0</h2>
+            <div class="button-container">
+                <button class="btn decrease">Decrease</button>
+                <button class="btn reset">reset</button>
+                <button class="btn increase">increase</button>
+            </div> 
+        </div>
+               
+        <hr>
+        <div class="inputsCalc">
+            <input id="first" type="text" placeholder="Select FirstInput" value="">
+            <input id="second" type="text" placeholder="Select SecondInput" value="">
+
+            <button class="btn1 add">ADD</button>
+            <button class="btn1 sub">MINUS</button>
+            <button class="btn1 mul">MULTIPLY</button>
+            <button class="btn1 divide">DIVID</button>
+            <p id="res"></p>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
